@@ -154,8 +154,11 @@ class ATSTailor {
     document.getElementById('downloadCover')?.addEventListener('click', () => this.downloadDocument('cover'));
     document.getElementById('attachBoth')?.addEventListener('click', () => this.attachBothDocuments());
     document.getElementById('copyContent')?.addEventListener('click', () => this.copyCurrentContent());
-
-    // Settings
+    
+    // Bulk Apply Dashboard
+    document.getElementById('openBulkApply')?.addEventListener('click', () => {
+      chrome.tabs.create({ url: chrome.runtime.getURL('bulk-apply.html') });
+    });
     document.getElementById('autoTailorToggle')?.addEventListener('change', (e) => {
       const enabled = !!e.target?.checked;
       this.autoTailorEnabled = enabled;

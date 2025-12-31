@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "ATS Tailored CV & Cover Letter",
-  "version": "1.2.0",
-  "description": "Lightning-fast ATS-optimized CV and cover letter tailoring with X-button removal for Greenhouse, Workday, SmartRecruiters, Bullhorn, Teamtailor, Workable, ICIMS, Oracle Cloud.",
+  "version": "2.0.0",
+  "description": "Enterprise ATS optimization with Simplify Keyword Matcher scoring, multi-page autofill, and bulk CSV job applications. Supports Greenhouse, Workday, SmartRecruiters, Bullhorn, Teamtailor, Workable, ICIMS, Oracle Cloud.",
   "permissions": [
     "storage",
     "activeTab",
@@ -62,7 +62,7 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["icons/*.png", "content.css"],
+      "resources": ["icons/*.png", "content.css", "bulk-apply.html", "bulk-apply.css", "bulk-apply.js"],
       "matches": ["<all_urls>"]
     }
   ]
