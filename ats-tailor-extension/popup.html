@@ -164,10 +164,54 @@
           <span class="stat-label">Avg Time</span>
         </div>
       </div>
+
+      <!-- Bulk Apply Button -->
+      <div class="bulk-apply-section">
+        <button id="openBulkApply" class="btn btn-secondary btn-large btn-full">
+          <span class="btn-icon-left">📊</span>
+          <span class="btn-text">Bulk Apply Dashboard</span>
+        </button>
+        <p class="bulk-hint">Upload CSV with multiple job URLs for sequential applications</p>
+      </div>
+
+      <!-- Simplify ATS Score Breakdown -->
+      <div class="simplify-score-card hidden" id="simplifyScoreCard">
+        <h3>📊 Simplify ATS Score</h3>
+        <div class="score-breakdown">
+          <div class="score-row">
+            <span>Keyword Coverage</span>
+            <span class="score-value" id="sKeywordCoverage">0/50</span>
+          </div>
+          <div class="score-row">
+            <span>Missing Keywords</span>
+            <span class="score-value negative" id="sMissingKeywords">0/20</span>
+          </div>
+          <div class="score-row">
+            <span>Experience Match</span>
+            <span class="score-value" id="sExperienceMatch">0/20</span>
+          </div>
+          <div class="score-row">
+            <span>Technical Alignment</span>
+            <span class="score-value" id="sTechnicalAlign">0/15</span>
+          </div>
+          <div class="score-row">
+            <span>Location/Format</span>
+            <span class="score-value" id="sLocationFormat">0/15</span>
+          </div>
+          <div class="score-row total">
+            <span>TOTAL</span>
+            <span class="score-value" id="sTotalScore">0/100</span>
+          </div>
+        </div>
+        <div class="missing-fixes hidden" id="missingFixes">
+          <h4>🔴 Top 5 Fixes</h4>
+          <ul id="fixesList"></ul>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-      <span class="version">v1.0.0</span>
+      <span class="version">v2.0.0</span>
     </footer>
   </div>
 

@@ -571,3 +571,60 @@ body {
   from { opacity: 0; transform: translate(-50%, 10px); }
   to { opacity: 1; transform: translate(-50%, 0); }
 }
+
+/* Bulk Apply Section */
+.bulk-apply-section {
+  margin-bottom: 10px;
+}
+
+.btn-full { width: 100%; }
+
+.bulk-hint {
+  font-size: 9px;
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  margin-top: 6px;
+}
+
+/* Simplify Score Card */
+.simplify-score-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.simplify-score-card h3 {
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #00d4ff;
+}
+
+.score-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.score-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  padding: 4px 8px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.score-row.total {
+  background: linear-gradient(135deg, rgba(0,212,255,0.2), rgba(124,58,237,0.2));
+  font-weight: 600;
+}
+
+.score-value { color: #2ed573; }
+.score-value.negative { color: #ff4757; }
+
+.missing-fixes { margin-top: 10px; }
+.missing-fixes h4 { font-size: 11px; color: #ffa502; margin-bottom: 6px; }
+.missing-fixes ul { list-style: none; font-size: 9px; }
+.missing-fixes li { padding: 4px 6px; background: rgba(255,165,2,0.1); border-radius: 4px; margin-bottom: 4px; }
